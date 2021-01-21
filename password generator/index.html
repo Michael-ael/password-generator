@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="description" content="password generator, random password generator, secure random password generator">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="content">
+        <div class="toggle">
+            <p> click to change the the theme</p>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+
+
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>    
+
+            <div class="settings">
+                <div class="setting">
+                    <label for="length"> Password length</label>
+                    <input type="number" id="length" min="4" max="20" value="20" />
+                </div>
+
+                <div class="setting">
+                    <label for="uppercase">Include uppercase letters</label>
+                    <input type="checkbox" id="uppercase" checked />
+                </div>
+
+                <div class="setting">
+                    <label for="lowercase"> Include lowercase letters</label>
+                    <input type="checkbox" id="lowercase" checked/>
+                </div>
+
+                <div class="setting">
+                    <label for="numbers"> Include Numbers</label>
+                    <input type="checkbox" id="numbers" checked />
+                </div>
+
+                <div class="setting">
+                    <label for="symbols"> Include Symbols</label>
+                    <input type="checkbox" id="symbols" checked />
+                </div>
+            </div>
+
+            <button class="btn btn-large" id="generate">
+                Generate Password
+            </button>
+    </div>
+</body>
+    <script src="index.js"></script>
+</html>
